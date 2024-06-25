@@ -1,0 +1,599 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(92, 32, 208);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em 0;
+}
+
+#div_logo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#div_logo p{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    height: 3vh;
+    padding-right: 2em;
+}
+
+.LOGO{
+    height: 7vh;
+    width: 4vw;
+    min-width: 4vw;
+    min-height: 7vh;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+ul a:hover{
+    text-decoration: underline;
+    color: #B6C2FE;
+}
+
+span.material-symbols-outlined{
+    display: none;
+    color: white;
+}
+
+.containerImgs{
+    display: flex;
+    height: 45vh;
+    width: 60vh;
+
+}
+
+.containerImgs img{
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.5s  ease;
+}
+
+
+.mainSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.setinhas{
+    display: flex;
+    font-size: 2.6em;
+    cursor: pointer;
+    justify-content: center;
+    width: 1em;
+    height: 1.2em;
+}
+
+span.setinhas:hover{
+    background-color: rgb(0, 0, 0,0.4);
+    border-radius: 2em;
+}
+
+span.bolinhas{
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.1em;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.alinharBolinhas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bolinhas:hover {
+    background-color: #717171;
+  }
+
+.bolinhas.active {
+    background-color: blue;
+}
+
+.SubSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.3rem;
+    padding: 2em;
+    margin-top: 3em;
+}
+
+
+#missao, #visao, #valores{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#missao h2{
+    
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 2.5em;
+
+}
+
+#missao p{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.2em;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #B6C2FE;
+}
+
+#visao h2{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
+#visao p{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.2em;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #B6C2FE;
+}
+
+#valores h2{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 2.5em;
+
+}
+
+#valores p{
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.2em;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #B6C2FE;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(57, 32, 141);
+    margin-top: 20em;
+}
+
+.ListaFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 2em;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+
+.ListaEsquerda, .ListaDireita{
+    line-height: 2em;
+}
+
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #B6C2FE;
+    padding: 10px;
+}
+
+#sobre h1{
+    color: #B6C2FE;
+}
+
+    
+.icones{
+    display: flex;
+    flex-direction: column;
+    height: 15em;
+    margin-top: -5em;
+}
+
+#hamburguinho{
+    display: none;
+}
+
+#redes{
+    display: block;
+    margin-right: 2em;
+    margin-top: 10em;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.Tooltip{
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.863);
+    color: rgba(126, 126, 126, 0.671);
+    padding: 3px;
+    align-self: flex-end;
+    margin-top: 13em;
+    margin-right: 0.8em;
+    position: absolute;
+}
+
+.icones img{
+    height: 4vh;
+    width: 2vw;
+}
+
+
+.icones p{
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #B6C2FE;
+}
+
+@media screen and (max-width: 360px){
+    .SubSection{
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-top: 2em;
+        gap: 1.5em;
+    }
+    
+    .ListaFooter{
+        gap: 4em;
+        font-size: 0.8em;
+        
+    }
+    
+    header ul{
+        display: none;
+    }
+
+    .icones{
+        align-self: center;
+    }
+
+    .icones img{
+        
+        height: 5vh;
+        width: 10vw;
+    }
+
+    .LOGO{
+        height: 5vh;
+        width: 5em;
+    }
+    
+    
+    #rede{
+        align-self: center;
+        justify-self: center;
+    }
+    #menu_symbol{
+        display: block;
+        color: white;
+        margin-right: 1.5em;
+    }
+
+    .estilohamb{
+        display: none;
+        background-color: rgb(92, 32, 208);
+        position: absolute;
+        margin-right: 1.5rem;
+        left: 78%;
+        transition: left 0.5s ease;
+    }
+
+    .estilohamb a{
+        color: white;
+        text-decoration: none;
+        display: flex;
+        font-family: "Manrope", sans-serif;
+        background-color: rgb(128, 128, 128, 0.6);
+        justify-content: center;
+    }
+    .estilohamb a:hover{
+        background-color: rgb(128, 128, 128, 0.9);
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width:480px) {
+    header ul{
+        display: none;
+    }
+ 
+    
+    .SubSection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ListaFooter{
+        padding-top: 2em;
+        font-size: 0.8em;
+        gap: 5em;
+    }
+    
+    .icones{
+        align-self: center;
+    }
+    .icones img{
+        
+        height: 4.5vh;
+        width: 10vw;
+        
+    }
+
+    .LOGO{
+        height: 6vh;
+        width: 5em;
+    }
+
+    #menu_symbol{
+        display: block;
+        color: white;
+        margin-right: 1.5em;
+    }
+
+    .estilohamb{
+        display: none;
+        background-color: rgb(92, 32, 208);
+        position: absolute;
+        margin-right: 1.5rem;
+        left: 78%;
+        transition: left 0.5s ease;
+    }
+
+    .estilohamb a{
+        color: white;
+        text-decoration: none;
+        display: flex;
+        font-family: "Manrope", sans-serif;
+        background-color: rgb(128, 128, 128, 0.6);
+        justify-content: center;
+    }
+    .estilohamb a:hover{
+        background-color: rgb(128, 128, 128, 0.9);
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    header ul{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2em;
+    }
+
+    .SubSection{
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+    }
+    
+    #sobre{
+        padding-top: 2em;
+    }
+    .ListaFooter{
+        gap: 3em;
+    }
+    .icones img{
+        height: 5vh;
+        width: 8vw;
+    }
+
+    .LOGO{
+        height: 6vh;
+        width: 5em;
+    }
+
+    #menu_symbol{
+        display: block;
+        color: white;
+        margin-right: 2.4em;
+    }
+
+    .estilohamb{
+        display: none;
+        background-color: rgb(92, 32, 208);
+        position: absolute;
+        transition: left 0.5s ease;
+    }
+
+    .estilohamb a{
+        color: white;
+        text-decoration: none;
+        display: flex;
+        font-family: "Manrope", sans-serif;
+        background-color: rgb(128, 128, 128, 0.6);
+        justify-content: center;
+    }
+    .estilohamb a:hover{
+        background-color: rgb(128, 128, 128, 0.9);
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    #hamburguinho{
+        display: none;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2em;
+    }
+    
+    #sobre{
+        padding-top: 5em;
+    }
+
+    .TodoFooter{
+        margin-top: 4em;
+    }
+
+    .SubSection{
+        margin-top: 2em;
+    }
+    .ListaFooter{
+        gap: 4em;
+        
+    }
+
+    .icones img{
+        
+        height: 5vh;
+        width: 7vw;
+        
+    }
+
+    .LOGO{
+        height: 4vh;
+        width: 5em;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1280px) {
+    #hamburguinho{
+        display: none;
+    }
+
+    .ListaFooter{
+        font-size: 0.8em;
+        
+    }
+
+    .SubSection{
+        margin-top: 3em;
+    }
+
+    #sobre{
+        margin-right: -12em;
+    }
+    
+    .LOGO{
+        height: 1vh;
+        width: 6em;
+    }
+
+    .icones img{
+        height: 4vh;
+        width: 3vw;
+
+    }
+}
+
+
+@media screen and (min-width:1281px) and (max-width:1440px) {
+    #hamburguinho{
+        display: none;
+    }
+
+    .icones img{
+        height: 5vh;
+        width: 3vw;
+    }
+
+    #sobre{
+        margin-right: -14.5em;
+    }
+    
+    .SubSection{
+        margin-top: 3em;
+    }
+
+    .LOGO{
+        width: 6em;
+    }
+}
+
+
+
